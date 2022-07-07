@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:wallpapers/screens/home_page.dart';
+import 'package:wallpapers/core/router/routers.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
+  final _forRoutes = Routes();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Wallpapers',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      initialRoute: '/home',
+      onGenerateRoute: _forRoutes.routeGenerate,
     );
   }
 }
-
