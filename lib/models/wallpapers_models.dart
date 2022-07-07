@@ -24,13 +24,13 @@ class Post {
     String? id;
     DateTime? createdAt;
     DateTime? updatedAt;
-    dynamic? promotedAt;
+    dynamic promotedAt;
     int? width;
     int? height;
     String? color;
     String? blurHash;
-    dynamic? description;
-    dynamic? altDescription;
+    dynamic description;
+    dynamic altDescription;
     Urls? urls;
     PostLinks? links;
     List<dynamic>? categories;
@@ -145,11 +145,11 @@ class User {
     String? username;
     String? name;
     String? firstName;
-    dynamic? lastName;
+    dynamic lastName;
     String? twitterUsername;
     String? portfolioUrl;
     String? bio;
-    dynamic ?location;
+    dynamic location;
     UserLinks? links;
     ProfileImage? profileImage;
     String? instagramUsername;
@@ -260,7 +260,7 @@ class Social {
     String? instagramUsername;
     String? portfolioUrl;
     String? twitterUsername;
-    dynamic? paypalEmail;
+    dynamic paypalEmail;
 
     factory Social.fromJson(Map<String, dynamic> json) => Social(
         instagramUsername: json["instagram_username"],

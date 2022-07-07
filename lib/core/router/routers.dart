@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:flutter/material.dart';
 import 'package:wallpapers/screens/error_page.dart';
 import 'package:wallpapers/screens/home_page.dart';
